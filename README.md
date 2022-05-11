@@ -1,2 +1,2 @@
 # 2ndSemC
-Sem 2 C assignments KIIT
+2nd Semester C assignments - OA12 - KIIT
