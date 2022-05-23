@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-int largest(int ar[])
+int largest(int ar[],int n)
 {
-    int tempnum=ar[0],n;
+    int tempnum=ar[0];
     for (int i = 1; i < n; i++)
     {
         if (ar[i]>tempnum)
@@ -20,7 +20,7 @@ int main()
     printf("Enter the number:");
     for (i = 0; i < n; i++)
         scanf("%d",&a[i]);
-    x=largest(a);
+    x=largest(a,n);
     printf("\nThe greatest number is %d",x);
     return 0;
 }

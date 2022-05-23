@@ -6,9 +6,10 @@ int main()
     struct book
     {
         char name[20];
-        int Sno;
+        char Author[20];
         int price;
         char publisher[20];
+        int edition;
     };
     int n,x=0;
     printf("Enter the number of books:");
@@ -18,12 +19,14 @@ int main()
     {
         printf("\nEnter the name of the book:");
         scanf(" %[^\n]",b[i].name);
-        printf("\nEnter the serial number:");
-        scanf("%d",&b[i].Sno);
+        printf("\nEnter the author:");
+        scanf("%[^\n]",&b[i].Author);
         printf("\nEnter the price:");
         scanf("%d",&b[i].price);
         printf("\nEnter the publisher:");
         scanf(" %[^\n]",b[i].publisher);
+        printf("\nEnter the edition:");
+        scanf("%d",&b[i].edition);   
     }
     char search[20];
     printf("Enter the book to be searched:");
@@ -31,7 +34,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         if (strcmp(search,b[i].name)==0)
-            x=b[i].Sno;
+            x=b[i].edition;
     }
     if (x>0)
         printf("The book is present and its serial number is %d.",x);
