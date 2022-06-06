@@ -9,9 +9,7 @@ int main()
     {   
         x=i;
         for ( j = 1; j <= n-i; j++)
-        {
             printf(" ");
-        }
         for (k=1; k <= i; k++)
         {
             printf("%d",x);
@@ -23,7 +21,7 @@ int main()
             printf("%d",x);
             x=x-1;
         }
-    printf("\n");;
+    printf("\n");
     }
 return 0;
 }  

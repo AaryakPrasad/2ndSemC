@@ -12,7 +12,7 @@ int main()
     scanf("%d",&o);
     printf("Enter the number of columns of the second matrix:");
     scanf("%d",&p);
-    int a[n][m],b[o][p],c[n][p];
+    int a[m][n],b[o][p],c[n][p];
     if (n!=o)
         printf("Multiplication is not possible.");
     else
